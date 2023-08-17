@@ -1,2 +1,2 @@
-# heyonaboutique
-Landing Page of Heyona Boutique
+# Heyona.id
+Landing Page of Heyona Boutique.
