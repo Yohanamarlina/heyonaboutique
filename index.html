@@ -5,9 +5,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <style>
  
-    
+  html{
+    max-width: 1440px;
+  }   
+
     .btn-purple{
       background-color: #97ADE4;
     }
@@ -31,10 +35,34 @@
     .advert-new-design{
       background-image: url("bg-advert-new-design.jpg");
       background-size: cover;
-
       background-repeat: no-repeat;
-      background-position-x: center;
-      height: 600px;
+      width: fit-content;
+    }
+
+    .advert-design-dress{
+      background-image: url("bg-advert-dress.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: fit-content;
+    }
+
+    .select-custom{
+      box-shadow: 0px 0px 4px 0px rgba(21, 21, 21, 0.15);
+    }
+
+    .star{
+      color: #FFDD29;
+    }
+
+
+    .dress{
+      cursor: pointer;
+      margin: 24px 0px;
+    }
+   .dress:hover{
+    box-shadow: 0px 0px 40px 0.5px rgba(0, 0, 0, 0.10);
+
+
     }
   </style>
 </head>
@@ -95,19 +123,281 @@
       <div class="mx-24 flex flex-wrap items-center justify-between">
           <div class="w-1/3">
             <p class="text-2xl w-5/6 font-light text-gray-600 py-2">The latest dress model in this month</p>
-            <p class="text-gray-500 w-5/6 py-2 text-md font-light">This dress model is the latest model from Heyona Boutique. Designed as simple as possible but with a stunning look. </p>
-            <p class="text-gray-500 w-5/6 py-2 text-md font-light"> combining white makes this dress shinier than other dresses. this combination is very interesting.
+            <p class="text-gray-500 w-5/6 py-2 text-lg font-light">This dress model is the latest model from Heyona Boutique. Designed as simple as possible but with a stunning look. </p>
+            <p class="text-gray-500 w-5/6 py-2 text-lg font-light"> combining white makes this dress shinier than other dresses. this combination is very interesting.
             </p>
             <p class="font-bold">Rp. 385.000</p>
             <button class="btn btn-purple py-2 px-6 text-sm my-4 text-white font-bold">Order Now</button>
           </div>
 
-          <div>
-          <img src="new-design-1.jpg" alt="">
+          <div class="grid justify-items-stretch">
+            <div class="justify-self-end">
+             <img src="new-design-1.jpg" alt="">
+            </div>      
           </div>
           
-          <div>
+          <div class="">
             <img src="new-design-2.jpg" alt="">
+          </div>
+      </div>
+    </section>
+
+    <section id="available-dresses" class="m-24">
+      <div class="sub-available-dresses flex flex-wrap items-center justify-between mb-8">
+        <div>
+           <p class="text-2xl w-80 font-light text-gray-600 py-2">Dresses that are still available in the store at this time</p>
+        </div>    
+        <div class="flex flex-wrap justify-between" >
+            <p class="p-2 relative left-24 text-gray-500">Short by  :</p>
+            <select id="Short" class="pl-24 pb-2 pt-2 pr-4 select-custom text-gray-500 rounded-sm ">
+              <option value="latest">latest</option>
+              <option value="newest">newest</option>
+              <option value="cheapest">cheapest</option>
+
+            </select>  
+          </div>   
+        </div>
+      
+      <div class=" flex flex-wrap items-center justify-between">
+        <div class="dress">
+          <img src="dress-1.jpg" class="w-64  h-96 object-cover" alt="">
+          <div class="dresses-description px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Pink Left Layer Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 225.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bolder"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-2.jpg" class="w-64  h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Short Blue Layer Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 300.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-3.jpg" class="w-64  h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Black White Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 255.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-4.jpg" class="w-64 h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">White Layer Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 305.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-5.jpg" class="w-64 h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Brown Long Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 375.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-6.jpg" class="w-64 h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Butterfly White Long Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 325.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-7.jpg" class="w-64 h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Soft Blue Long Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 345.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dress">
+          <img src="dress-8.jpg" class="w-64 h-96 object-cover" alt="">
+          <div class="dresses-description  px-2 py-2">
+            <div class="header-dresses">
+              <p class="text-lg font-light">Blue Forest Long Dress</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-between">
+              <div class="left-detail">
+                <p class="font-bold">Rp. 389.000</p>
+                  <div class="flex flex-wrap items-left">
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                    <i class="bi bi-star-fill star pl-0 p-1"></i>
+                  </div>
+              </div>
+
+              <div class="right-detail flex items-left position-center">
+                <i class="bi bi-heart p-2 text-lg font-bold"></i>
+                <i class="bi bi-cart2 p-2 text-lg"></i>
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="advert-design-dress my-24 py-8">
+      <div class="mx-24 flex flex-wrap items-center justify-between">
+
+          <div class="grid justify-items-stretch">
+            <div class="justify-self-end">
+             <img src="discount-2.jpg" alt="">
+            </div>      
+          </div>
+          
+          <div class="">
+            <img src="discount-1.jpg" alt="">
+          </div>
+
+          <div class="w-1/3">
+            <p class="text-2xl w-5/6 font-light text-gray-600 py-2">Elegant long dress suitable for evening party.</p>
+            <p class="text-gray-500 w-5/6 py-2 text-lg font-light">very suitable for wearing long dresses in the evening. You will look more elegant because this dress is suitable for casual events.</p>
+            <p class="text-gray-500 w-5/6 py-2 text-lg font-light">We give 10% discount for the first purchase.
+            </p>
+            <p class="font-bold">Rp. 405.000</p>
+            <button class="btn btn-purple py-2 px-6 text-sm my-4 text-white font-bold ">Order Now</button>
           </div>
       </div>
     </section>
