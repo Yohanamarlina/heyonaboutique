@@ -10,12 +10,21 @@
  
   html{
     max-width: 1440px;
-    min-width: 1320px;
-
+    min-width: 1300px;
+    align-items: center;
   }   
 
     .btn-purple{
       background-color: #97ADE4;
+    }
+
+    .text-purple{
+      color: #8BA4E3;
+    }
+
+    .btn-purple:hover{
+      background-color: #778abb;
+      transition: 0.5s;
     }
 
     .bg-four-img{
@@ -65,6 +74,10 @@
     box-shadow: 0px 0px 40px 0.5px rgba(0, 0, 0, 0.10);
 
 
+    }
+
+    .bg-footer{
+      background-color: #F4F6FB;
     }
   </style>
 </head>
@@ -403,7 +416,55 @@
           </div>
       </div>
     </section>
+
+    <section class="review mx-24 my-24">
+      <div class="header-review">
+        <p class="text-2xl w-80 font-light text-gray-600 py-2">What do they say about our dresses?</p>
+      </div>
+
+      <div class="mt-8 flex flex-wrap items-center justify-between">
+        <div class="review-left">
+          <img src="review.jpg" alt="">
+        </div>
+
+        <div class="review-right w-2/5 mt-32">
+          <div class="review-content py-6 px-8  my-4 select-custom">
+            <p class="font-light">Thank you. I really like buying dresses here. the dress fits me very well. the quality of the dress is very good</p>
+            <P class="font-bold text-purple text-right my-1">- Marilyn George</P>
+          </div>
+
+          <div class="review-content py-6 px-8 my-4 select-custom">
+            <p class="font-light">I really like the dress from Heyona Boutique. it's make my appearance attractive. The prices is very relatively standard.</p>
+            <P class="font-bold text-purple text-right my-1">- Lydia Ekstrom</P>
+          </div>
+        </div>
+      </div>
+    </section>
 </main>
 
+<footer>
+  <div class="flex flex-wrap items-center justify-between bg-footer px-24 py-8">
+    <div class="about-us w-1/3">
+      <p class="text-xl mb-4">About Us</p>
+      <p class="w-5/6 font-light">Heyona Boutique provides all kinds of dresses. From short to long dresses. We have various models of dresses. from simple to luxurious.</p>
+    </div>
+
+    <div class="follow-us w-1/3">
+      <p class="text-xl mb-4">Follow Us</p>
+      <div class="flex flex-wrap items-center justify-between">
+        <a href="https://www.facebook.com" class="font-light text-gray-700"><i class="bi bi-facebook mr-2 text-lg font-light"></i>Heyona Boutique</a>
+        <a href="https://www.facebook.com" class="font-light text-gray-700"><i class="bi bi-instagram mr-2 text-lg font-light"></i>Heyona Boutique</a>
+        <a href="https://www.facebook.com" class="font-light text-gray-700"><i class="bi bi-twitter mr-2 text-lg font-light"></i>Heyona Boutique</a>
+        <a href="https://www.facebook.com" class="font-light text-gray-700"><i class="bi bi-facebook mr-2 text-lg font-light"></i>Heyona Boutique</a>
+        
+      </div>
+    </div>
+
+    <div class="contact-us w-1/3">
+      <p class="text-xl mb-4">Contact Us</p>
+      <p class="w-5/6 font-light">Heyona Boutique provides all kinds of dresses. From short to long dresses. We have various models of dresses. from simple to luxurious.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
